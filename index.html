@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>One Hangman To Rule Them All...</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Eagle+Lake" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- link css
+	link js -->
+	
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 head">
+				<h1>Hangman</h1>
+				<h2>of the Rings</h2>
+			</div>
+		</div>
+	
+		<div id="solution-picture"></div>
+
+		<div class="row main-row">
+				<div id="word"> </div>
+		</div>
+	
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3"></div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 stats">
+				<p class="stat-label">Letters guessed: <div class="stat-content" id="letters-guessed"></div></p>
+				<p class="stat-label">Guesses remaining: <div class="stat-content" id="guesses-remaining"></div></p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 stats">
+				<p class="stat-label">Wins: <div class="stat-content" id="wins"></div></p>
+				<p class="stat-label">Losses: <div class="stat-content" id="losses"></div></p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
