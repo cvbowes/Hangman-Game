@@ -116,21 +116,30 @@ function updateGuesses() {
 
 function win() {
 	if (lettersCorrect === currentWord.length) {
-		alert("Congratulations, savior of Middle Earth!!");
 		wins++;
 		document.getElementById("wins").innerHTML = wins;
-		resetGame();
+		document.getElementById("win").style.display = "block";
+		close(document.getElementById("win"));
 	}
 }
 
 function lose() {
 	if (guessesRemaining === 0) {
-		alert("Your quest has failed. ):");
 		losses++;
 		document.getElementById("losses").innerHTML = losses;
-		resetGame();
+		document.getElementById("lose").style.display = "block";
+		close(document.getElementById("lose"));
+
 	}
  }
+
+function close(id) {
+ 	id.onclick = function(){
+ 		id.style.display = "none";
+ 		resetGame();
+ 	}
+ }
+
 
  function resetGame() {
  	currentWord = randomWord();
