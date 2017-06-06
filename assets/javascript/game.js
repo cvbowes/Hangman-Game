@@ -10,7 +10,7 @@ var wordList = ['Celebrimbor', 'Nazgul', 'Sauron', 'Isildur', 'hobbit', 'Shire',
 var currentWord = [];			//selected randomly from wordList
 var displayWord = [];			//what appears on screen (includes blanks)
 var lettersGuessed = [];		//array that holds letters guessed by user
-var guessesRemaining = 8;		//counter; allowed number of incorrect guesses
+var guessesRemaining = 10;		//counter; allowed number of incorrect guesses
 var lettersCorrect = 0;			//counter; keeps track of how many spaces have been successfully filled in
 var wins = 0;					//counter; keeps track of wins
 var losses = 0;
@@ -145,7 +145,7 @@ function close(id) {
  	currentWord = randomWord();
  	displayWord = [];
  	lettersGuessed = [];
- 	guessesRemaining = 8;
+ 	guessesRemaining = 10;
  	document.getElementById("guesses-remaining").innerHTML = guessesRemaining;
  	lettersCorrect = 0;
  	updateGuesses();

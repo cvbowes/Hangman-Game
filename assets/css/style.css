@@ -1,5 +1,5 @@
 body {
-	background-image: url("../images/bg.jpg");
+	background: url("../images/bg.jpg") center center fixed;
 }
 
 .container-fluid {
