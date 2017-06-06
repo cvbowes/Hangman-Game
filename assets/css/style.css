@@ -2,10 +2,6 @@ body {
 	background: url("../images/bg.jpg") center center fixed;
 }
 
-.container-fluid {
-
-}
-
 .popup {
 	display: none;
 	z-index: 9999;
